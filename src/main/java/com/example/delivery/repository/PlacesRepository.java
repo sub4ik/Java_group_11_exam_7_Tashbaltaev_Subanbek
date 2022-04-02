@@ -1,4 +1,8 @@
 package com.example.delivery.repository;
 
-public interface PlacesRepository {
+import com.example.delivery.entity.Places;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+public interface PlacesRepository extends PagingAndSortingRepository<Places, String> {
+
 }
