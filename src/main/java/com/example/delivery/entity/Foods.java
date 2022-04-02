@@ -23,9 +23,5 @@ public class Foods {
     @JoinColumn(name = "place_id")
     private Places place;
 
-    public Foods generateRandomCost() {
-
-        return Foods.builder().cost(5 + Math.random()*130).build();
-    }
 
 }
